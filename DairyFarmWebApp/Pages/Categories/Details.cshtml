@@ -1,0 +1,30 @@
+﻿@page
+@model DairyFarmWebApp.Categories.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Category Details</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Category.CategoryCode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Category.CategoryCode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Category.CategoryName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Category.CategoryName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" class="btn btn-secondary" asp-route-id="@Model.Category.CategoryID">Edit</a> |
+    <a asp-page="./Index">View All Category</a>
+</div>

@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="card mb-3">
+    <h3 class="card-header text-center">Welcome to Dairy Farm</h3>
+    <img src="~/images/dairy.jpg" style="width:100%;height:500px" />
+    <div class="card-footer text-center">
+        <a asp-area="" class="btn btn-info" asp-page="/Categories/Index">View All Category</a> |
+        <a asp-area="" class="btn btn-info" asp-page="/Companies/Index">View All Company</a> |
+        <a asp-area="" class="btn btn-info" asp-page="/Products/Index">View All Product</a> |
+        <a asp-area="" class="btn btn-info" asp-page="/Orders/Index">View All Order</a>
+    </div>
+</div>
